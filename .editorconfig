@@ -1,0 +1,31 @@
+# 現在のディレクトリ位置をrootとする
+root = true
+
+# 全てのファイルに対する設定
+[*]
+# 改行コード
+end_of_line = lf
+# 文字コード
+charset =  utf-8
+#ファイル末尾に空行を追加する
+insert_final_newline = true
+# 行末尾の空白文字を削除する
+trim_trailing_whitespace = true
+# インデントはspaceを指定する
+indent_style = space
+# インデント幅
+indent_size = 2
+# 指定文字数で改行（0指定時は無効）
+# max_line_length = 80
+
+[*.md]
+#ファイル末尾に空行を追加しない
+insert_final_newline = false
+# 行末尾の空白文字を削除しない
+trim_trailing_whitespace = false
+# 指定文字数で改行（0指定時は無効）
+max_line_length = 0
+
+[*.{java,cpp,c,h,hpp,cs}]
+# インデント幅
+indent_size = 4
